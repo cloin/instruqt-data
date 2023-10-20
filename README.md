@@ -5,10 +5,10 @@ The objective of this script is to create a datasource for reporting on the succ
 ## Configuration
 Replace `<your-team-id>` and `<your-token>` with your actual team ID and authorization token.
 ```javascript
-var graphqlUrl = 'https://play.instruqt.com/graphql';
-var teamId = "<your-team-id>";
+const graphqlUrl = 'https://play.instruqt.com/graphql';
+const teamId = "<your-team-id>";
 
-var requestHeaders = {
+const requestHeaders = {
   "Authorization": "Bearer <your-token>",
   "Content-Type": "application/json"
 };

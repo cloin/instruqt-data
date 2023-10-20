@@ -10,7 +10,7 @@
 const graphqlUrl = 'https://play.instruqt.com/graphql';
 const teamId = "<your-team-id>";
 
-var requestHeaders = {
+const requestHeaders = {
   "Authorization": "Bearer <your-token>",
   "Content-Type": "application/json"
 };
