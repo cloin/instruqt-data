@@ -25,11 +25,59 @@ The `getTrackIds` and `getTrackInsights` functions are central to the weekly dat
 
 ```javascript
 function getTrackIds() {
-  // ... rest of your code ...
+  var query = `
+    query teamTracks {
+      team(teamID: "${teamId}") {
+        name
+        tracks {
+          slug
+          id
+          maintenance
+        }
+      }
+    }
+  `;
+  // ...
 }
+```
 
+```javascript
 function getTrackInsights() {
-  // ... rest of your code ...
+  // ... 
+  var query = `
+    query teamtrackInsights {
+      team(teamID: "${teamId}") {
+        name
+        insights {
+          track {
+            page(input: {
+              trackIds: ${JSON.stringify(trackIds)},
+              playType: ALL,
+              dateRangeFilter: {
+                from: "${fromDateString}",
+                to: "${toDateString}"
+              }
+            }) {
+              items {
+                track {
+                  slug
+                  permalink
+                }
+                currentPeriod {
+                  plays
+                  learnersReached
+                  timeSpent
+                  completionRate
+                  averageReviewScore
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `;
+  // ...
 }
 ```
 
