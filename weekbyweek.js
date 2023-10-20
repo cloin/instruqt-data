@@ -7,8 +7,8 @@
 //////////
 
 ////////// Configuration //////////
-var graphqlUrl = 'https://play.instruqt.com/graphql';
-var teamId = "<your-team-id>";
+const graphqlUrl = 'https://play.instruqt.com/graphql';
+const teamId = "<your-team-id>";
 
 var requestHeaders = {
   "Authorization": "Bearer <your-token>",
