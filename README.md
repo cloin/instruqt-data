@@ -86,11 +86,11 @@ For historic data collection, the `populateHistoricalData` and `collectAndLogDat
 
 ```javascript
 function populateHistoricalData() {
-  // ... rest of your code ...
+  // ... 
 }
 
 function collectAndLogData(fromDateString, toDateString) {
-  // ... rest of your code ...
+  // ... 
 }
 ```
 
