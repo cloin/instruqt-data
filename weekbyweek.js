@@ -1,5 +1,4 @@
 //////////
-// Owner: Colin McNaughton
 // Objective: Create a datasource for reporting on the success of individual Instruqt tracks.
 // This script should have an associated trigger to collect insights data on all production
 // tracks every 7 days and append the collected data to the google sheet this script is 
